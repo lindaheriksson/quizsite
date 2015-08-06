@@ -23,8 +23,13 @@
 					<div class="wrapper">	
 						<div class="whole-guestion">
 							<p class="question">	
-								{{ quiz.name }}
-							</p>
+								{% for quiz_slug, quiz in quizzes.items %}
+								<p>
+									<a href="{% url "quiz_page" quiz_slug %}">
+									{{ quiz.name }}
+									</a>
+								</p>
+								{% endfor %}
 							<p>
 								{{ quiz.description }}
 							</p>	 
