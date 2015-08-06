@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<link rel="stylesheet" href="/static/style.css">
 		<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 		<meta charset="utf-8">
 		<title>Ze Quizz</title>
 	</head>
+	
 	<body>
 		<div class="container">
 			<div class="row">
@@ -21,6 +23,7 @@
 								<p>By <a href="https://twitter.com/litenmendryg">@litenmendryg</a></p>
 						</div>
 					</div>
+
 					<div class="wrapper">	
 						<div class="whole-guestion">
 							<p class="question">	
@@ -38,27 +41,18 @@
 						</div>	
 					</div>
 			
-		
-					<div class="wrapper">	
-						<div class="whole-guestion">
-							<p class="question">	
-								How old is Mark Zuckerberg?
-							</p>	 
-							<form> 
-								<input type="radio" name="years" value="A: 33 years">A: 33 years</br>
-								<input type="radio" name="years" value="A: 29 years">B: 29 years</br>
-								<input type="radio" name="years" value="A: 31 years">C: 31 years</br>
-							</form>	
-						</div>	
-					</div>
 					<div class="wrapper">	
 						<div class="header">
 							<div class="whole-guestion">
-								<p><a href="{% url "result_page" quiz_slug %}" class="myButton">Get the result</a></p>
-
+								<p>
+									<h1>
+										<a href="{% url "result_page" quiz_slug %}" class="myButton">Get the result</a>
+									</h1>	
+								</p>
 							</div>	
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>	

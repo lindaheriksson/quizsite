@@ -8,7 +8,7 @@ html, body, .container {
 
 body {
 	background-color: #FFFFFF;
-	font-family: helvetica;
+	font-family: "Comic Sans MS", cursive, sans-serif;
 	color: #000000;
 	font-size: 1.5em;
 }
@@ -31,7 +31,7 @@ body {
 .wrapper {
 		margin: 0 auto;
 		width: 50%;
-		background-color: #7FC6A6;
+		background-color: #aee5cb;
 		border-radius: 25px;
 		margin-bottom: 15px;
 }
@@ -98,10 +98,10 @@ a {
 }
 
  /* font styles */
-.h1 {
+h1 {
 	
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 1em;
 }
 
 p {
@@ -135,7 +135,7 @@ display: inline;
 	display:inline-block;
 	cursor:pointer;
 	color:#000000;
-	font-family:Arial;
+	font-family:"Comic Sans MS", cursive, sans-serif;
 	font-weight: bold;
 	font-size:1em;
 	padding:15px 42px;
@@ -152,7 +152,7 @@ display: inline;
 }
 
 .header .myButton {
-	background-color:#7FC6A6;
+	background-color:#aee5cb;
 }
 
 .header .whole-guestion .myButton {

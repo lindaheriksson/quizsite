@@ -28,10 +28,10 @@
 					{% for quiz_slug, quiz in quizzes.items %}
 					<div class="wrapper">	
 						<div class="whole-guestion">
-   	 						<p class"question">
+   	 						<h1>
    	 							<a href="{% url "quiz_page" quiz_slug %}">
 							{{ quiz.name }}
-								</a>
+								</h1>
 							</p>
 						</div>	
 					</div>
