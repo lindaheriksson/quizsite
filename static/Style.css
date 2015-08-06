@@ -1,0 +1,163 @@
+/* main elements*/
+
+html, body, .container {
+		height: 100%;
+		margin: 0;
+	}
+
+
+body {
+	background-color: #FFFFFF;
+	font-family: helvetica;
+	color: #000000;
+	font-size: 1.5em;
+}
+
+@media only screen and (min-width: 321px) {
+		.container {
+		display: table;
+		width: 100%;
+}
+
+.row { 
+	display: table-row; 
+}
+
+.column {
+		display: table-cell;
+		vertical-align: middle;
+}
+	
+.wrapper {
+		margin: 0 auto;
+		width: 50%;
+		background-color: #7FC6A6;
+		border-radius: 25px;
+		margin-bottom: 15px;
+}
+
+.wrapper .header { 
+	background-color: #FFFFFF;
+	border-radius: 25px;
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 130px;
+}
+
+.header img {
+	width: 20%;
+	float: left;
+	margin-right: 8px;
+}
+
+.header p {	
+	margin: 0;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+
+
+a {
+	color: #000000;
+}
+
+.whole-guestion {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-top: 0.5px;
+}
+
+
+
+
+
+/* #top, #bottom, #left, #right {
+	background: #000000;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 20px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 20px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+.footer {
+	padding: 40px;
+
+	
+}
+
+ /* font styles */
+.h1 {
+	
+	font-weight: bold;
+	font-size: 2em;
+}
+
+p {
+	font-size: 1em;
+}
+
+.question {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+
+}
+
+#share-buttons a {
+	text-decoration: none;
+}
+
+.myButton {
+	background-color:#ffffff;
+	-moz-border-radius:25px;
+	-webkit-border-radius:25px;
+	border-radius:25px;
+
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-weight: bold;
+	font-size:1em;
+	padding:15px 42px;
+	text-decoration:none;
+
+	
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.header .myButton {
+	background-color:#7FC6A6;
+}
+
+.header .whole-guestion .myButton {
+	margin-left: -27px;
+}
+
+
+
