@@ -37,31 +37,13 @@
 					<div class="wrapper">	
 						<div class="whole-guestion">
 							<p class="question">	
-								<a href='quiz.html'>Quiz: Facebook fun</a>
+								{% for quiz_slug, quiz in quizzes.items %}
+								<p>{{ quiz.name }}</p>
+								{% endfor %}
 							</p>	 
 							<p> 
 								What do you know about the biggest social network?
 							</p>	
-						</div>	
-					</div>
-					<div class="wrapper">	
-						<div class="whole-guestion">
-							<p class="question">	
-								Quiz: Buzzfeed buzz 
-							</p>	 
-							<p> 
-								You can never guess what happens next.
-							</p>
-						</div>	
-					</div>
-					<div class="wrapper">	
-						<div class="whole-guestion">
-							<p class="question">	
-								Quiz: Twitter tutorial 
-							</p>	 
-							<p> 
-								What do you call the space between the twat and the shitter? Twitter. 
-							</p>
 						</div>	
 					</div>
 				</div>
