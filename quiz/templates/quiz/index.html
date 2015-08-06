@@ -23,27 +23,25 @@
 		<div class="container">
 			<div class="row">
 				<div class="column">
-
 					<div class="wrapper">	
 						<div class="header">
 							<a href="index.html">
 								<img src="/static/quizz_portrait.jpg">
 							</a>
-							
 								<p>Quizzes about internetz and social things.</p>
 								<p>By <a href="https://twitter.com/litenmendryg">@litenmendryg</a></p>
 						</div>
 					</div>
 					<div class="wrapper">	
 						<div class="whole-guestion">
-							<p class="question">	
-								{% for quiz_slug, quiz in quizzes.items %}
-								<p>{{ quiz.name }}</p>
-								{% endfor %}
-							</p>	 
-							<p> 
-								What do you know about the biggest social network?
-							</p>	
+							{% for quiz_slug, quiz in quizzes.items %}
+   	 						<p class"question">
+   	 							<a href="{% url "quiz_page" quiz_slug %}">
+							{{ quiz.name }}
+								</a>
+							</p>
+							{% endfor %} 
+								
 						</div>	
 					</div>
 				</div>
