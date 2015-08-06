@@ -11,17 +11,20 @@
 
 	</head>
 
+
 	<body>
+		
 		<div class="container">
 			<div class="row">
 				<div class="column">
+
 					<div class="wrapper">	
 						<div class="header">
 							<a href="{% url "index_page" %}">
 								<img src="/static/quizz_portrait.jpg">
 							</a>
-								<p>Quizzes about internetz and social things.</p>
-								<p>By <a href="https://twitter.com/litenmendryg">@litenmendryg</a></p>
+							<p>Quizzes about internetz and social things.</p>
+							<p>By <a href="https://twitter.com/litenmendryg">@litenmendryg</a></p>
 						</div>
 					</div>
 					
@@ -30,21 +33,18 @@
 						<div class="whole-guestion">
    	 						<h1>
    	 							<a href="{% url "quiz_page" quiz_slug %}">
-							{{ quiz.name }}
-								</h1>
-							</p>
+									{{ quiz.name }}
+								</a>	
+							</h1>							
 						</div>	
 					</div>
-							{% endfor %} 
+					{% endfor %} 
 								
 					
 				</div>
 			</div>
 		</div>	
-		
-		<div class="footer">
-	
-		</div>	
+
 
 	</body>
 

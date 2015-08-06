@@ -13,6 +13,8 @@ body {
 	font-size: 1.5em;
 }
 
+
+
 @media only screen and (min-width: 321px) {
 		.container {
 		display: table;
@@ -31,7 +33,7 @@ body {
 .wrapper {
 		margin: 0 auto;
 		width: 50%;
-		background-color: #aee5cb;
+		background-color: #93eae9;
 		border-radius: 25px;
 		margin-bottom: 15px;
 }
@@ -138,8 +140,8 @@ display: inline;
 	font-family:"Comic Sans MS", cursive, sans-serif;
 	font-weight: bold;
 	font-size:1em;
-	padding:15px 42px;
-	text-decoration:none;
+	padding:15px 25px;
+	text-decoration:underline;
 
 	
 }
@@ -152,7 +154,7 @@ display: inline;
 }
 
 .header .myButton {
-	background-color:#aee5cb;
+	background-color:#93eae9;
 }
 
 .header .whole-guestion .myButton {
