@@ -12,14 +12,6 @@
 	</head>
 
 	<body>
-		<!--
-		<div id="left"></div>
-		<div id="right"></div>
-		<div id="top"></div>
-		<div id="bottom"></div>
-		-->
-	
-		
 		<div class="container">
 			<div class="row">
 				<div class="column">
@@ -32,18 +24,20 @@
 								<p>By <a href="https://twitter.com/litenmendryg">@litenmendryg</a></p>
 						</div>
 					</div>
+					
+					{% for quiz_slug, quiz in quizzes.items %}
 					<div class="wrapper">	
 						<div class="whole-guestion">
-							{% for quiz_slug, quiz in quizzes.items %}
    	 						<p class"question">
    	 							<a href="{% url "quiz_page" quiz_slug %}">
 							{{ quiz.name }}
 								</a>
 							</p>
-							{% endfor %} 
-								
 						</div>	
 					</div>
+							{% endfor %} 
+								
+					
 				</div>
 			</div>
 		</div>	
