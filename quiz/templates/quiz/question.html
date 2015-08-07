@@ -28,16 +28,25 @@
 						<div class="whole-guestion">
 							<p class="question">	
 								<h1>{{ question_number }}. {{ question }}</h1>
-							</p>	 
-							<p>
-								{{ answer1 }}
-							</p>
-							<p>
-								{{ answer2 }}
-							</p>
-							<p>
-								{{ answer3 }}
 							</p>	
+							<form action="{% url "question_page" quiz.slug question_number %}" method="post">
+							{% csrf_token %} 
+							<p>
+								<label>
+									<input type="radio" name="answer" value="1">{{ answer1 }}
+								</label>	
+							</p>
+							<p>
+								<label>
+									<input type="radio" name="answer" value="2">{{ answer2 }}
+								</label>	
+							</p>
+							<p>
+								<label>
+									<input type="radio" name="answer" value="3">{{ answer3 }}
+								</label>
+							</p>	
+							<form>
 						</div>	
 					</div>
 			
@@ -46,7 +55,7 @@
 							<div class="whole-guestion">
 								<p>
 									<h1>
-										<a href="{% url "result_page" quiz_slug %}" class="myButton">Get the result</a>
+										<button type="submit" class="myButton">Next</button>
 									</h1>	
 								</p>
 							</div>	

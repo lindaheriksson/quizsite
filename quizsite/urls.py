@@ -1,7 +1,9 @@
+# coding:utf-8
+
 from django.contrib import admin
 from django.conf.urls import include
-
 from django.conf.urls import url
+
 from quiz import views
 urlpatterns = [
 	url(r"^$", views.index, name="index_page"),
