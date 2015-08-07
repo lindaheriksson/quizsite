@@ -164,6 +164,7 @@ display: inline;
 
 .header .myButton {
 	background-color:#93eae9;
+	border: none; !important
 }
 
 .header .whole-guestion .myButton {
