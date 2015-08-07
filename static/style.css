@@ -115,6 +115,14 @@ p {
 	font-weight: bold;
 }
 
+.whole-guestion img {
+	width: 100%;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+
 #share-buttons img {
 width: 35px;
 padding: 5px;
