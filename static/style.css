@@ -150,7 +150,7 @@ display: inline;
 	font-size:1em;
 	padding:15px 25px;
 	text-decoration:underline;
-	border: none; !important
+	border: none; 
 
 	
 }
@@ -164,7 +164,7 @@ display: inline;
 
 .header .myButton {
 	background-color:#93eae9;
-	border: none; !important
+	border: none; 
 }
 
 .header .whole-guestion .myButton {
