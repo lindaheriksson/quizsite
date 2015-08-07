@@ -5,7 +5,6 @@ class Quiz(models.Model):
 	name = models.CharField(max_length=100)
 	slug = models.SlugField(max_length=100)
 	description = models.TextField()
-	photo = models.ImageField(upload_to='quiz')
 	
 	def __unicode__(self):
 		return self.name
