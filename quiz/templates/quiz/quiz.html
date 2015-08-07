@@ -28,13 +28,13 @@
 					<div class="wrapper">	
 						<div class="whole-guestion">
 							<p class="question">	
-								{% for quiz_slug, quiz in quizzes.items %}
+				
 								<p>
-									<a href="{% url "quiz_page" quiz_slug %}">
-									{{ quiz.name }}
-									</a>
+									
+									<h1>{{ quiz.name }}</h1>
+									
 								</p>
-								{% endfor %}
+								
 							<p>
 								{{ quiz.description }}
 							</p>	 
@@ -46,7 +46,7 @@
 							<div class="whole-guestion">
 								<p>
 									<h1>
-										<a href="{% url "question_page" quiz_slug 1 %}" class="myButton">Do the quiz</a>
+									<a href="{% url "question_page" quiz.slug 1 %}" class="myButton">Do the quiz</a>
 									</h1>	
 								</p>
 							</div>	

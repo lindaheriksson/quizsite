@@ -28,11 +28,11 @@
 						</div>
 					</div>
 					
-					{% for quiz_slug, quiz in quizzes.items %}
+					{% for quiz in quizzes %}
 					<div class="wrapper">	
 						<div class="whole-guestion">
    	 						<h1>
-   	 							<a href="{% url "quiz_page" quiz_slug %}">
+   	 							<a href="{% url "quiz_page" quiz.slug %}">
 									{{ quiz.name }}
 								</a>	
 							</h1>							

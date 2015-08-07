@@ -1,17 +1,18 @@
 # coding: utf-8 
 
 from django.shortcuts import render
+from quiz.models import Quiz
 
 def index(request):
 	context = {
-		"quizzes": quizzes,
+		"quizzes": Quiz.objects.all(),
 	}
 	return render(request, "quiz/index.html", context)
 
 def quiz(request, slug):
 	context = {
-		"quiz": quizzes[slug],
-		"quiz_slug": slug,
+		"quiz": Quiz.objects.get(slug=slug),
+		
 	}
 	return render(request, "quiz/quiz.html", context)
 
@@ -34,18 +35,18 @@ def result(request, slug):
 	}
 	return render(request, "quiz/result.html", context)
 
-quizzes = {
-	"klassiker": {
-   		"name": u"Klassiska böcker",
-	   	"description": "Hur bra kan du dina klassiker?"
-	},
-	"fotboll": {
-	   	"name": "Största fotbollslagen",
-	   	"description": "Kan du dina lag?"
-	},
-	"kanda-hackare": {
-	    	"name": "Världens mest kända hackare",
-	    	"description": "Hackerhistoria är viktigt, kan du den?"	},
-}
+# quizzes = {
+# 	"klassiker": {
+#    		"name": u"Klassiska böcker",
+# 	   	"description": "Hur bra kan du dina klassiker?"
+# 	},
+# 	"fotboll": {
+# 	   	"name": "Största fotbollslagen",
+# 	   	"description": "Kan du dina lag?"
+# 	},
+# 	"kanda-hackare": {
+# 	    	"name": "Världens mest kända hackare",
+# 	    	"description": "Hackerhistoria är viktigt, kan du den?"	},
+# }
 
 
